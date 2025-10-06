@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "home": "الرئيسية",
+    "about": "من نحن",
+    "services": "الخدمات",
+    "portfolio": "معرض الأعمال",
+    "blog": "المدونة",
+    "contact": "اتصل بنا",
+    "pages": "الصفحات",
+    "project": "المشاريع",
+    "homeVersion1": "الصفحة الرئيسية 1",
+    "homeVersion2": "الصفحة الرئيسية 2",
+    "homeVersion3": "الصفحة الرئيسية 3",
+    "aboutUs": "من نحن",
+    "ourTeam": "فريقنا",
+    "teamDetails": "تفاصيل الفريق",
+    "pricing": "الأسعار",
+    "faq": "الأسئلة الشائعة",
+    "project1": "المشروع 1",
+    "project2": "المشروع 2",
+    "projectDetails": "تفاصيل المشروع",
+    "serviceDetails": "تفاصيل الخدمة",
+    "blogWithSidebar": "المدونة مع الشريط الجانبي",
+    "blogLeftSidebar": "المدونة مع الشريط الجانبي الأيسر",
+    "blogDetails": "تفاصيل المدونة"
+  },
+  "hero": {
+    "title": "نحن نقدم أفضل الحلول التقنية",
+    "subtitle": "نحن متخصصون في تطوير التطبيقات والمواقع الإلكترونية بأحدث التقنيات",
+    "button": "ابدأ الآن"
+  },
+  "common": {
+    "readMore": "اقرأ المزيد",
+    "learnMore": "تعلم المزيد",
+    "getStarted": "ابدأ الآن",
+    "contactUs": "اتصل بنا",
+    "viewAll": "عرض الكل",
+    "search": "بحث..."
+  }
+}

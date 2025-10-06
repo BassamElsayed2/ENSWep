@@ -1,0 +1,9 @@
+{
+  "version": 3,
+  "sources": [],
+  "sections": [
+    {"offset": {"line": 23, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/i18n/routing.js"],"sourcesContent":["import { defineRouting } from \"next-intl/routing\";\r\n\r\nexport const routing = defineRouting({\r\n  // A list of all locales that are supported\r\n  locales: [\"ar\", \"en\"],\r\n\r\n  // Used when no locale matches\r\n  defaultLocale: \"ar\",\r\n});\r\n"],"names":[],"mappings":";;;AAAA;;AAEO,MAAM,UAAU,CAAA,GAAA,kOAAA,CAAA,gBAAa,AAAD,EAAE;IACnC,2CAA2C;IAC3C,SAAS;QAAC;QAAM;KAAK;IAErB,8BAA8B;IAC9B,eAAe;AACjB"}},
+    {"offset": {"line": 37, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}},
+    {"offset": {"line": 43, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/middleware.js"],"sourcesContent":["import createMiddleware from \"next-intl/middleware\";\r\nimport { routing } from \"./src/app/i18n/routing\";\r\n\r\nexport default createMiddleware(routing);\r\n\r\nexport const config = {\r\n  matcher: [\r\n    // Enable a redirect to a matching locale at the root\r\n    \"/\",\r\n\r\n    // Set a cookie to remember the previous locale for\r\n    // all requests that have a locale prefix\r\n    \"/(ar|en)/:path*\",\r\n\r\n    // Enable redirects that add missing locales\r\n    // (e.g. `/pathnames` -> `/en/pathnames`)\r\n    \"/((?!_next|_vercel|.*\\\\..*).*)\",\r\n  ],\r\n};\r\n"],"names":[],"mappings":";;;;AACA;AADA;;;uCAGe,CAAA,GAAA,sLAAA,CAAA,UAAgB,AAAD,EAAE,6HAAA,CAAA,UAAO;AAEhC,MAAM,SAAS;IACpB,SAAS;QACP,qDAAqD;QACrD;QAEA,mDAAmD;QACnD,yCAAyC;QACzC;QAEA,4CAA4C;QAC5C,yCAAyC;QACzC;KACD;AACH"}},
+    {"offset": {"line": 64, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
+}

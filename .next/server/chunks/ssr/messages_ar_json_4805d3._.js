@@ -1,0 +1,9 @@
+module.exports = {
+
+"[project]/messages/ar.json (json)": ((__turbopack_context__) => {
+
+var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
+{
+__turbopack_export_value__(JSON.parse("{\"navigation\":{\"home\":\"الرئيسية\",\"about\":\"من نحن\",\"services\":\"الخدمات\",\"portfolio\":\"معرض الأعمال\",\"blog\":\"المدونة\",\"contact\":\"اتصل بنا\",\"pages\":\"الصفحات\",\"project\":\"المشاريع\",\"homeVersion1\":\"الصفحة الرئيسية 1\",\"homeVersion2\":\"الصفحة الرئيسية 2\",\"homeVersion3\":\"الصفحة الرئيسية 3\",\"aboutUs\":\"من نحن\",\"ourTeam\":\"فريقنا\",\"teamDetails\":\"تفاصيل الفريق\",\"pricing\":\"الأسعار\",\"faq\":\"الأسئلة الشائعة\",\"project1\":\"المشروع 1\",\"project2\":\"المشروع 2\",\"projectDetails\":\"تفاصيل المشروع\",\"serviceDetails\":\"تفاصيل الخدمة\",\"blogWithSidebar\":\"المدونة مع الشريط الجانبي\",\"blogLeftSidebar\":\"المدونة مع الشريط الجانبي الأيسر\",\"blogDetails\":\"تفاصيل المدونة\"},\"hero\":{\"title\":\"نحن نقدم أفضل الحلول التقنية\",\"subtitle\":\"نحن متخصصون في تطوير التطبيقات والمواقع الإلكترونية بأحدث التقنيات\",\"button\":\"ابدأ الآن\"},\"common\":{\"readMore\":\"اقرأ المزيد\",\"learnMore\":\"تعلم المزيد\",\"getStarted\":\"ابدأ الآن\",\"contactUs\":\"اتصل بنا\",\"viewAll\":\"عرض الكل\",\"search\":\"بحث...\"}}"));}}),
+
+};

@@ -1,0 +1,54 @@
+/* [project]/src/app/assets/css/utilities/animations.css [app-client] (css, ) */
+@keyframes fadeInDown {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes float-bob-x {
+  0% {
+    transform: translateX(0);
+  }
+
+  50% {
+    transform: translateX(10px);
+  }
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes float-bob-y {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(10px);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeInDown {
+  animation: .5s ease-in-out fadeInDown;
+}
+
+.animate-float-bob-x {
+  animation: 5s linear infinite float-bob-x;
+}
+
+.animate-float-bob-y {
+  animation: 5s linear infinite float-bob-y;
+}
+
+/*# sourceMappingURL=src_app_assets_css_utilities_animations_3ffd7f.css.map*/

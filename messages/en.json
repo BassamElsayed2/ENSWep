@@ -1,0 +1,40 @@
+{
+  "navigation": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services",
+    "portfolio": "Portfolio",
+    "blog": "Blog",
+    "contact": "Contact",
+    "pages": "Pages",
+    "project": "Project",
+    "homeVersion1": "Home Version 1",
+    "homeVersion2": "Home Version 2",
+    "homeVersion3": "Home Version 3",
+    "aboutUs": "About Us",
+    "ourTeam": "Our Team",
+    "teamDetails": "Team Details",
+    "pricing": "Pricing",
+    "faq": "FAQ",
+    "project1": "Project 1",
+    "project2": "Project 2",
+    "projectDetails": "Project Details",
+    "serviceDetails": "Service Details",
+    "blogWithSidebar": "Blog With Sidebar",
+    "blogLeftSidebar": "Blog Left Sidebar",
+    "blogDetails": "Blog Details"
+  },
+  "hero": {
+    "title": "We Provide The Best Tech Solutions",
+    "subtitle": "We specialize in developing applications and websites with the latest technologies",
+    "button": "Get Started"
+  },
+  "common": {
+    "readMore": "Read More",
+    "learnMore": "Learn More",
+    "getStarted": "Get Started",
+    "contactUs": "Contact Us",
+    "viewAll": "View All",
+    "search": "Search..."
+  }
+}
