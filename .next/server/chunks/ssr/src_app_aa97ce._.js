@@ -1275,13 +1275,16 @@ var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/dist/server/route-modules/app-page/vendored/ssr/react.js [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/src/app/Components/Card/PricingCard.jsx [app-ssr] (ecmascript)");
 var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/next/image.js [app-ssr] (ecmascript)");
+var __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__ = __turbopack_import__("[project]/node_modules/use-intl/dist/esm/development/react.js [app-ssr] (ecmascript)");
 "use client";
 ;
 ;
 ;
 ;
+;
 const Pricing1 = ()=>{
-    const [isActive, setIsActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])('monthly');
+    const locale = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$use$2d$intl$2f$dist$2f$esm$2f$development$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useLocale"])();
+    const [isActive, setIsActive] = (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["useState"])("monthly");
     return /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("section", {
         className: "pricing-section section-padding pt-0 fix",
         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -1293,7 +1296,7 @@ const Pricing1 = ()=>{
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "subtitle",
                             children: [
-                                "Our Pricing ",
+                                locale === "ar" ? "الأسعار" : "Our Pricing",
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                     src: "/assets/images/icon/fireIcon.svg",
                                     alt: "img",
@@ -1301,36 +1304,36 @@ const Pricing1 = ()=>{
                                     height: 17
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                    lineNumber: 15,
-                                    columnNumber: 33
+                                    lineNumber: 18,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                            lineNumber: 14,
-                            columnNumber: 17
+                            lineNumber: 16,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("h2", {
                             className: "title",
-                            children: "Choose The Plans That Suits You!"
+                            children: locale === "ar" ? "اختر الخطة" : "Choose The Plans That Suits You!"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                            lineNumber: 17,
-                            columnNumber: 17
+                            lineNumber: 25,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("p", {
                             className: "text",
-                            children: "There are many variations of passages of Lorem Ipsum available, but the majority have"
+                            children: locale === "ar" ? "هناك العديد من النسخ المتاحة" : "There are many variations of passages of Lorem Ipsum available, but the majority have"
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                            lineNumber: 18,
-                            columnNumber: 17
+                            lineNumber: 30,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                    lineNumber: 13,
-                    columnNumber: 13
+                    lineNumber: 15,
+                    columnNumber: 9
                 }, this),
                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                     className: "pricing-wrapper style1",
@@ -1343,8 +1346,8 @@ const Pricing1 = ()=>{
                                 role: "tablist",
                                 children: [
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: `nav-item ${isActive === 'monthly' ? 'active' : ''}`,
-                                        onClick: ()=>setIsActive('monthly'),
+                                        className: `nav-item ${isActive === "monthly" ? "active" : ""}`,
+                                        onClick: ()=>setIsActive("monthly"),
                                         role: "presentation",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "nav-link active",
@@ -1355,20 +1358,20 @@ const Pricing1 = ()=>{
                                             role: "tab",
                                             "aria-controls": "pills-monthly",
                                             "aria-selected": "true",
-                                            children: "Monthly"
+                                            children: locale === "ar" ? "شهري" : "Monthly"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                            lineNumber: 25,
-                                            columnNumber: 29
+                                            lineNumber: 44,
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                        lineNumber: 24,
-                                        columnNumber: 25
+                                        lineNumber: 39,
+                                        columnNumber: 15
                                     }, this),
                                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
-                                        className: `nav-item ${isActive === 'yearly' ? 'active' : ''}`,
-                                        onClick: ()=>setIsActive('yearly'),
+                                        className: `nav-item ${isActive === "yearly" ? "active" : ""}`,
+                                        onClick: ()=>setIsActive("yearly"),
                                         role: "presentation",
                                         children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("button", {
                                             className: "nav-link",
@@ -1380,34 +1383,34 @@ const Pricing1 = ()=>{
                                             "aria-controls": "pills-yearly",
                                             "aria-selected": "false",
                                             tabIndex: "-1",
-                                            children: "Yearly"
+                                            children: locale === "ar" ? "سنوي" : "Yearly"
                                         }, void 0, false, {
                                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                            lineNumber: 30,
-                                            columnNumber: 29
+                                            lineNumber: 62,
+                                            columnNumber: 17
                                         }, this)
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                        lineNumber: 29,
-                                        columnNumber: 25
+                                        lineNumber: 57,
+                                        columnNumber: 15
                                     }, this)
                                 ]
                             }, void 0, true, {
                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                lineNumber: 23,
-                                columnNumber: 21
+                                lineNumber: 38,
+                                columnNumber: 13
                             }, this)
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                            lineNumber: 22,
-                            columnNumber: 17
+                            lineNumber: 37,
+                            columnNumber: 11
                         }, this),
                         /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
                             className: "tab-content",
                             id: "pills-tabContent",
                             children: [
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: `tab-pane ${isActive === 'monthly' ? 'active' : ''}`,
+                                    className: `tab-pane ${isActive === "monthly" ? "active" : ""}`,
                                     id: "pills-monthly",
                                     role: "tabpanel",
                                     "aria-labelledby": "pills-monthly-tab",
@@ -1415,75 +1418,76 @@ const Pricing1 = ()=>{
                                         className: "row gy-5",
                                         children: [
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                name: "Basic Plan",
+                                                name: locale === "ar" ? "الخطة الأساسية" : "Basic Plan",
                                                 price: "$14.99",
                                                 monthly: "Per Month",
-                                                content: "There are many variations of passages of Lorem Ipsum available, but the majority",
+                                                content: locale === "ar" ? "هناك العديد من النسخ المتاحة" : "There are many variations of passages of Lorem Ipsum available, but the majority",
                                                 FeatureList: [
-                                                    "7 days free access",
-                                                    "Maximum of 5 collaborators",
-                                                    "Cloud backup 1GB",
-                                                    "Maximum 50 tasks per week",
-                                                    "Updates for 1 Year"
+                                                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
+                                                    locale === "ar" ? "العدد الأقصى للمتعاونين" : "Maximum of 5 collaborators",
+                                                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
+                                                    locale === "ar" ? "العدد الأقصى للمهام في الأسبوع" : "Maximum 50 tasks per week",
+                                                    locale === "ar" ? "تحديثات لسنة واحدة" : "Updates for 1 Year"
                                                 ],
-                                                btnname: "Get You Free plan",
+                                                btnname: locale === "ar" ? "احصل على الخطة المجانية" : "Get You Free plan",
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 41,
-                                                columnNumber: 29
+                                                lineNumber: 86,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                name: "Standard Plan",
+                                                name: locale === "ar" ? "الخطة المتقدمة" : "Standard Plan",
                                                 price: "$19.99",
                                                 monthly: "Per Month",
-                                                content: "There are many variations of passages of Lorem Ipsum available, but the majority",
+                                                content: locale === "ar" ? "هناك العديد من النسخ المتاحة" : "There are many variations of passages of Lorem Ipsum available, but the majority",
                                                 FeatureList: [
-                                                    "7 days free access",
-                                                    "Maximum of 5 collaborators",
-                                                    "Cloud backup 1GB",
-                                                    "Maximum 50 tasks per week",
-                                                    "Updates for 1 Year"
+                                                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
+                                                    locale === "ar" ? "العدد الأقصى للمتعاونين" : "Maximum of 5 collaborators",
+                                                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
+                                                    locale === "ar" ? "العدد الأقصى للمهام في الأسبوع" : "Maximum 50 tasks per week",
+                                                    locale === "ar" ? "العدد الأقصى للمهام في الأسبوع" : "Maximum 50 tasks per week",
+                                                    locale === "ar" ? "تحديثات لسنة واحدة" : "Updates for 1 Year"
                                                 ],
-                                                btnname: "Get You Free plan",
+                                                btnname: locale === "ar" ? "احصل على الخطة المجانية" : "Get You Free plan",
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 57,
-                                                columnNumber: 29
+                                                lineNumber: 116,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
-                                                name: "Premium Plan Plan",
+                                                name: locale === "ar" ? "الخطة المتقدمة" : "Premium Plan Plan",
                                                 price: "$24.99",
                                                 monthly: "Per Month",
-                                                content: "There are many variations of passages of Lorem Ipsum available, but the majority",
+                                                content: locale === "ar" ? "هناك العديد من النسخ المتاحة" : "There are many variations of passages of Lorem Ipsum available, but the majority",
                                                 FeatureList: [
-                                                    "7 days free access",
-                                                    "Maximum of 5 collaborators",
-                                                    "Cloud backup 1GB",
-                                                    "Maximum 50 tasks per week",
-                                                    "Updates for 1 Year"
+                                                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
+                                                    locale === "ar" ? "العدد الأقصى للمتعاونين" : "Maximum of 5 collaborators",
+                                                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
+                                                    locale === "ar" ? "العدد الأقصى للمهام في الأسبوع" : "Maximum 50 tasks per week",
+                                                    locale === "ar" ? "تحديثات لسنة واحدة" : "Updates for 1 Year"
                                                 ],
-                                                btnname: "Get You Free plan",
+                                                btnname: locale === "ar" ? "احصل على الخطة المجانية" : "Get You Free plan",
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 73,
-                                                columnNumber: 29
+                                                lineNumber: 149,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                        lineNumber: 39,
-                                        columnNumber: 25
+                                        lineNumber: 85,
+                                        columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                    lineNumber: 37,
-                                    columnNumber: 21
+                                    lineNumber: 79,
+                                    columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                    className: `tab-pane ${isActive === 'yearly' ? 'active' : ''}`,
+                                    className: `tab-pane ${isActive === "yearly" ? "active" : ""}`,
                                     id: "pills-yearly",
                                     role: "tabpanel",
                                     "aria-labelledby": "pills-yearly-tab",
@@ -1506,8 +1510,8 @@ const Pricing1 = ()=>{
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 94,
-                                                columnNumber: 25
+                                                lineNumber: 189,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 name: "Standard Plan",
@@ -1525,8 +1529,8 @@ const Pricing1 = ()=>{
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 110,
-                                                columnNumber: 29
+                                                lineNumber: 205,
+                                                columnNumber: 17
                                             }, this),
                                             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$ssr$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Card$2f$PricingCard$2e$jsx__$5b$app$2d$ssr$5d$__$28$ecmascript$29$__["default"], {
                                                 name: "Premium Plan Plan",
@@ -1544,42 +1548,42 @@ const Pricing1 = ()=>{
                                                 btnurl: "/pricing"
                                             }, void 0, false, {
                                                 fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                                lineNumber: 126,
-                                                columnNumber: 29
+                                                lineNumber: 221,
+                                                columnNumber: 17
                                             }, this)
                                         ]
                                     }, void 0, true, {
                                         fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                        lineNumber: 92,
-                                        columnNumber: 25
+                                        lineNumber: 188,
+                                        columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                                    lineNumber: 91,
-                                    columnNumber: 21
+                                    lineNumber: 182,
+                                    columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                            lineNumber: 36,
-                            columnNumber: 17
+                            lineNumber: 78,
+                            columnNumber: 11
                         }, this)
                     ]
                 }, void 0, true, {
                     fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-                    lineNumber: 21,
-                    columnNumber: 13
+                    lineNumber: 36,
+                    columnNumber: 9
                 }, this)
             ]
         }, void 0, true, {
             fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-            lineNumber: 12,
-            columnNumber: 9
+            lineNumber: 14,
+            columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/Components/Pricing/Pricing1.jsx",
-        lineNumber: 11,
-        columnNumber: 9
+        lineNumber: 13,
+        columnNumber: 5
     }, this);
 };
 const __TURBOPACK__default__export__ = Pricing1;

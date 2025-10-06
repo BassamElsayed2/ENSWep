@@ -1,11 +1,7 @@
 {
   "/[locale]/(innerpage)/service/hosting/page": "app/[locale]/(innerpage)/service/hosting/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/_not-found/page": "app/_not-found/page.js",
   "/[locale]/(innerpage)/service/page": "app/[locale]/(innerpage)/service/page.js",
-  "/[locale]/(innerpage)/service/distributor-hosting/page": "app/[locale]/(innerpage)/service/distributor-hosting/page.js",
-  "/page": "app/page.js",
-  "/[locale]/(home1)/page": "app/[locale]/(home1)/page.js",
-  "/[locale]/(innerpage)/service/service-details/page": "app/[locale]/(innerpage)/service/service-details/page.js",
-  "/[locale]/(innerpage)/pricing/page": "app/[locale]/(innerpage)/pricing/page.js"
+  "/[locale]/(innerpage)/design-services/video-design/page": "app/[locale]/(innerpage)/design-services/video-design/page.js"
 }

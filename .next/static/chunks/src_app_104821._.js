@@ -442,12 +442,104 @@ function Nav({ setMobileToggle }) {
                 className: "menu-item-has-children",
                 children: [
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        href: `/${locale}/design-services/wep-design`,
+                        onClick: ()=>setMobileToggle(false),
+                        children: locale === "ar" ? "خدمات التصميم" : "Design Services"
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                        lineNumber: 177,
+                        columnNumber: 9
+                    }, this),
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Header$2f$DropDown$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                        children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("ul", {
+                            children: [
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: `/${locale}/design-services/wep-design`,
+                                        onClick: ()=>setMobileToggle(false),
+                                        children: locale === "ar" ? "تصميم الويب" : "Wep Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                        lineNumber: 186,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                    lineNumber: 185,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: `/${locale}/design-services/game-design`,
+                                        onClick: ()=>setMobileToggle(false),
+                                        children: locale === "ar" ? "تصميم الألعاب" : "Game Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                        lineNumber: 194,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                    lineNumber: 193,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: `/${locale}/design-services/app-design`,
+                                        onClick: ()=>setMobileToggle(false),
+                                        children: locale === "ar" ? "تصميم التطبيقات" : "App Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                        lineNumber: 202,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                    lineNumber: 201,
+                                    columnNumber: 13
+                                }, this),
+                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
+                                        href: `/${locale}/design-services/video-design`,
+                                        onClick: ()=>setMobileToggle(false),
+                                        children: locale === "ar" ? "تصميم الفيديوهات" : "Video Design"
+                                    }, void 0, false, {
+                                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                        lineNumber: 210,
+                                        columnNumber: 15
+                                    }, this)
+                                }, void 0, false, {
+                                    fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                                    lineNumber: 209,
+                                    columnNumber: 13
+                                }, this)
+                            ]
+                        }, void 0, true, {
+                            fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                            lineNumber: 184,
+                            columnNumber: 11
+                        }, this)
+                    }, void 0, false, {
+                        fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                        lineNumber: 183,
+                        columnNumber: 9
+                    }, this)
+                ]
+            }, void 0, true, {
+                fileName: "[project]/src/app/Components/Header/Nav.jsx",
+                lineNumber: 176,
+                columnNumber: 7
+            }, this),
+            /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
+                className: "menu-item-has-children",
+                children: [
+                    /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$client$2f$app$2d$dir$2f$link$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
                         href: `/${locale}/blog`,
                         onClick: ()=>setMobileToggle(false),
                         children: t("navigation.blog")
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                        lineNumber: 177,
+                        lineNumber: 221,
                         columnNumber: 9
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$src$2f$app$2f$Components$2f$Header$2f$DropDown$2e$jsx__$5b$app$2d$client$5d$__$28$ecmascript$29$__["default"], {
@@ -460,12 +552,12 @@ function Nav({ setMobileToggle }) {
                                         children: t("navigation.blog")
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                        lineNumber: 183,
+                                        lineNumber: 227,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                    lineNumber: 182,
+                                    lineNumber: 226,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -475,12 +567,12 @@ function Nav({ setMobileToggle }) {
                                         children: t("navigation.blogWithSidebar")
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                        lineNumber: 191,
+                                        lineNumber: 235,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                    lineNumber: 190,
+                                    lineNumber: 234,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -490,12 +582,12 @@ function Nav({ setMobileToggle }) {
                                         children: t("navigation.blogLeftSidebar")
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                        lineNumber: 199,
+                                        lineNumber: 243,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                    lineNumber: 198,
+                                    lineNumber: 242,
                                     columnNumber: 13
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -505,29 +597,29 @@ function Nav({ setMobileToggle }) {
                                         children: t("navigation.blogDetails")
                                     }, void 0, false, {
                                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                        lineNumber: 207,
+                                        lineNumber: 251,
                                         columnNumber: 15
                                     }, this)
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                                    lineNumber: 206,
+                                    lineNumber: 250,
                                     columnNumber: 13
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                            lineNumber: 181,
+                            lineNumber: 225,
                             columnNumber: 11
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                        lineNumber: 180,
+                        lineNumber: 224,
                         columnNumber: 9
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                lineNumber: 176,
+                lineNumber: 220,
                 columnNumber: 7
             }, this),
             /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("li", {
@@ -537,12 +629,12 @@ function Nav({ setMobileToggle }) {
                     children: t("navigation.contact")
                 }, void 0, false, {
                     fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                    lineNumber: 218,
+                    lineNumber: 262,
                     columnNumber: 9
                 }, this)
             }, void 0, false, {
                 fileName: "[project]/src/app/Components/Header/Nav.jsx",
-                lineNumber: 217,
+                lineNumber: 261,
                 columnNumber: 7
             }, this)
         ]

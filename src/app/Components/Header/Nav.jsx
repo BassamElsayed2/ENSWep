@@ -174,6 +174,50 @@ export default function Nav({ setMobileToggle }) {
         </DropDown>
       </li>
       <li className="menu-item-has-children">
+        <Link
+          href={`/${locale}/design-services/wep-design`}
+          onClick={() => setMobileToggle(false)}
+        >
+          {locale === "ar" ? "خدمات التصميم" : "Design Services"}
+        </Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link
+                href={`/${locale}/design-services/wep-design`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تصميم الويب" : "Wep Design"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/design-services/game-design`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تصميم الألعاب" : "Game Design"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/design-services/app-design`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تصميم التطبيقات" : "App Design"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/design-services/video-design`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تصميم الفيديوهات" : "Video Design"}
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
+      <li className="menu-item-has-children">
         <Link href={`/${locale}/blog`} onClick={() => setMobileToggle(false)}>
           {t("navigation.blog")}
         </Link>
