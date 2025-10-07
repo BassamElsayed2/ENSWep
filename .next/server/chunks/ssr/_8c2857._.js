@@ -508,31 +508,22 @@ const HeroBanner1 = ({ subtitle, title, content, btnname, btnurl, btntwo, btn2ur
                                                     columnNumber: 21
                                                 }, this),
                                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
-                                                    className: "thumbShape2",
-                                                    children: /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
-                                                        src: "/assets/images/shape/introThumbShape1_2.png",
-                                                        alt: "img",
-                                                        width: 536,
-                                                        height: 537
-                                                    }, void 0, false, {
-                                                        fileName: "[project]/src/app/Components/HeroBanner/HeroBanner1.jsx",
-                                                        lineNumber: 226,
-                                                        columnNumber: 23
-                                                    }, this)
+                                                    className: "thumbShape2"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner1.jsx",
                                                     lineNumber: 225,
                                                     columnNumber: 21
                                                 }, this),
-                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])(__TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$image$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["default"], {
+                                                /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$server$2f$route$2d$modules$2f$app$2d$page$2f$vendored$2f$rsc$2f$react$2d$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$rsc$5d$__$28$ecmascript$29$__["jsxDEV"])("video", {
                                                     className: "main-thumb img-custom-anim-right wow fadeInUp",
-                                                    src: img,
-                                                    alt: "img",
-                                                    width: 726,
-                                                    height: 709
+                                                    src: "/HeroVideo.mp4",
+                                                    autoPlay: true,
+                                                    muted: true,
+                                                    playsInline: true,
+                                                    loop: true
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/HeroBanner/HeroBanner1.jsx",
-                                                    lineNumber: 233,
+                                                    lineNumber: 234,
                                                     columnNumber: 21
                                                 }, this)
                                             ]

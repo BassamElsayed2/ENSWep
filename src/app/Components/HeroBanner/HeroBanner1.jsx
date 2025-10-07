@@ -223,19 +223,21 @@ const HeroBanner1 = ({
                       />
                     </div>
                     <div className="thumbShape2">
-                      <Image
+                      {/* <Image
                         src="/assets/images/shape/introThumbShape1_2.png"
                         alt="img"
                         width={536}
                         height={537}
-                      />
+                      /> */}
                     </div>
-                    <Image
+
+                    <video
                       className="main-thumb img-custom-anim-right wow fadeInUp"
-                      src={img}
-                      alt="img"
-                      width={726}
-                      height={709}
+                      src="/HeroVideo.mp4"
+                      autoPlay
+                      muted
+                      playsInline
+                      loop
                     />
                   </div>
                 </div>

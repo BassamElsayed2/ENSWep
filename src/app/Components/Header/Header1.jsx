@@ -69,7 +69,7 @@ export default function Header1({ variant }) {
                   <Nav setMobileToggle={setMobileToggle} />
                 </div>
               </div>
-              <div className="cs_main_header_right">
+              {/* <div className="cs_main_header_right">
                 <div className="header-btn d-flex align-items-center">
                   <a
                     onClick={() => setSearchToggle(!searchToggle)}
@@ -94,7 +94,7 @@ export default function Header1({ variant }) {
                     </Link>
                   </div>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>

@@ -1,6 +1,66 @@
 {
   "app": {
+    "[project]/src/app/[locale]/(home1)/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/contact/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
     "[project]/src/app/[locale]/(innerpage)/service/hosting/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/design-services/game-design/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/service/email-services/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/service/private-servers/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/design-services/wep-design/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/it-Services/it-helpDesk/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/it-Services/vpn/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/it-Services/call-center/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/it-Services/security/page": [
       "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
       "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
       "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
@@ -12,7 +72,31 @@
       "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
       "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
     ],
-    "[project]/src/app/[locale]/(innerpage)/design-services/video-design/page": [
+    "[project]/src/app/[locale]/(innerpage)/development/app-development/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/project/project-details/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/our-projects/news-project/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/our-projects/real-estate-project/page": [
+      "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
+      "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",
+      "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscRiyS8p4_RA-s.p.2ede4be6.woff2"
+    ],
+    "[project]/src/app/[locale]/(innerpage)/our-projects/store-project/page": [
       "static/media/L0x_DF02iFML4hGCyMqlbS1miXK2-s.p.b88a81e7.woff2",
       "static/media/XRXV3I6Li01BKofINeaBTMnFcQ-s.p.5b5a25ed.woff2",
       "static/media/SLXVc1nY6HkvangtZmpQdkhzfH5lkSscQyyS8p4_RHH1-s.p.5ed9f6cf.woff2",

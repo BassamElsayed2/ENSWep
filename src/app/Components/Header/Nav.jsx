@@ -8,130 +8,13 @@ export default function Nav({ setMobileToggle }) {
 
   return (
     <ul className="cs_nav_list fw-medium">
-      <li className="menu-item-has-children">
+      <li>
         <Link href={`/${locale}`}>{t("navigation.home")}</Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link href={`/${locale}`} onClick={() => setMobileToggle(false)}>
-                {t("navigation.homeVersion1")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/home2`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.homeVersion2")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/home3`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.homeVersion3")}
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-      </li>
-      <li className="menu-item-has-children">
-        <Link href={`/${locale}/pages`}>{t("navigation.pages")}</Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link
-                href={`/${locale}/about`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.aboutUs")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/team`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.ourTeam")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/team/team-details`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.teamDetails")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/pricing`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.pricing")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/faq`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.faq")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/contact`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.contact")}
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
       </li>
 
       <li className="menu-item-has-children">
         <Link
-          href={`/${locale}/project`}
-          onClick={() => setMobileToggle(false)}
-        >
-          {t("navigation.project")}
-        </Link>
-        <DropDown>
-          <ul>
-            <li>
-              <Link
-                href={`/${locale}/project`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.project1")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/project2`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.project2")}
-              </Link>
-            </li>
-            <li>
-              <Link
-                href={`/${locale}/project/project-details`}
-                onClick={() => setMobileToggle(false)}
-              >
-                {t("navigation.projectDetails")}
-              </Link>
-            </li>
-          </ul>
-        </DropDown>
-      </li>
-
-      <li className="menu-item-has-children">
-        <Link
-          href={`/${locale}/service`}
+          href={`/${locale}/service/hosting`}
           onClick={() => setMobileToggle(false)}
         >
           {locale === "ar" ? "خدمات الويب" : "Web Services"}
@@ -218,46 +101,122 @@ export default function Nav({ setMobileToggle }) {
         </DropDown>
       </li>
       <li className="menu-item-has-children">
-        <Link href={`/${locale}/blog`} onClick={() => setMobileToggle(false)}>
-          {t("navigation.blog")}
+        <Link
+          href={`/${locale}/it-Services/it-helpDesk`}
+          onClick={() => setMobileToggle(false)}
+        >
+          {locale === "ar" ? "خدمات الدعم الفني" : "IT HelpDesk Services"}
         </Link>
         <DropDown>
           <ul>
             <li>
               <Link
-                href={`/${locale}/blog`}
+                href={`/${locale}/it-Services/it-helpDesk`}
                 onClick={() => setMobileToggle(false)}
               >
-                {t("navigation.blog")}
+                {locale === "ar" ? "الدعم الفني" : "IT HelpDesk"}
               </Link>
             </li>
             <li>
               <Link
-                href={`/${locale}/blog-sidebar`}
+                href={`/${locale}/it-Services/vpn`}
                 onClick={() => setMobileToggle(false)}
               >
-                {t("navigation.blogWithSidebar")}
+                {locale === "ar" ? "شبكات VPN الآمنة" : "VPN Security"}
               </Link>
             </li>
             <li>
               <Link
-                href={`/${locale}/blog-left-sidebar`}
+                href={`/${locale}/it-Services/call-center`}
                 onClick={() => setMobileToggle(false)}
               >
-                {t("navigation.blogLeftSidebar")}
+                {locale === "ar" ? "مراكز الاتصال" : "Call Center"}
               </Link>
             </li>
             <li>
               <Link
-                href={`/${locale}/blog/blog-details`}
+                href={`/${locale}/it-Services/security`}
                 onClick={() => setMobileToggle(false)}
               >
-                {t("navigation.blogDetails")}
+                {locale === "ar" ? "الأمن السيبراني" : "Cyber Security"}
               </Link>
             </li>
           </ul>
         </DropDown>
       </li>
+      <li className="menu-item-has-children">
+        <Link
+          href={`/${locale}/development`}
+          onClick={() => setMobileToggle(false)}
+        >
+          {locale === "ar" ? "البرمجة والتطوير" : "Development "}
+        </Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link
+                href={`/${locale}/development/game-development`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "برمجة الالعاب" : "Game Development"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/development/app-development`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "برمجة التطبيقات" : "App Development"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/development/web-development`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "برمجة الويب" : "Web Development"}
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
+      <li className="menu-item-has-children">
+        <Link
+          href={`/${locale}/our-projects/news-app`}
+          onClick={() => setMobileToggle(false)}
+        >
+          {locale === "ar" ? "الاصدارات البرمجيه" : "Our Projects"}
+        </Link>
+        <DropDown>
+          <ul>
+            <li>
+              <Link
+                href={`/${locale}/our-projects/news-project`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تطبيق الاخبار" : "News App"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/our-projects/real-estate-project`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تطبيق العقارات" : "Real Estate App"}
+              </Link>
+            </li>
+            <li>
+              <Link
+                href={`/${locale}/our-projects/store-project`}
+                onClick={() => setMobileToggle(false)}
+              >
+                {locale === "ar" ? "تطبيق المتجر" : "Store App"}
+              </Link>
+            </li>
+          </ul>
+        </DropDown>
+      </li>
+
       <li>
         <Link
           href={`/${locale}/contact`}
