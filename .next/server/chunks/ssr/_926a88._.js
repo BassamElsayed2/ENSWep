@@ -954,7 +954,6 @@ if ("TURBOPACK compile-time truthy", 1) {
     const warnings = new Set();
     warnOnce = (msg)=>{
         if (!warnings.has(msg)) {
-            console.warn(msg);
         }
         warnings.add(msg);
     };
@@ -1306,7 +1305,6 @@ function getImgProps(param, _state) {
         if (!src) {
             // React doesn't show the stack trace and there's
             // no `src` to help identify which image, so we
-            // instead console.error(ref) during mount.
             unoptimized = true;
         } else {
             if (fill) {
@@ -3266,7 +3264,6 @@ function defaultLoader(param) {
             try {
                 parsedSrc = new URL(src);
             } catch (err) {
-                console.error(err);
                 throw new Error('Failed to parse src "' + src + '" on `next/image`, if using relative image it must start with a leading slash "/" or be an absolute URL (http:// or https://)');
             }
             if ("TURBOPACK compile-time truthy", 1) {

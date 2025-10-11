@@ -2,21 +2,5 @@
   "/page": "app/page.js",
   "/[locale]/(home1)/page": "app/[locale]/(home1)/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/[locale]/(innerpage)/contact/page": "app/[locale]/(innerpage)/contact/page.js",
-  "/[locale]/(innerpage)/service/hosting/page": "app/[locale]/(innerpage)/service/hosting/page.js",
-  "/[locale]/(innerpage)/design-services/game-design/page": "app/[locale]/(innerpage)/design-services/game-design/page.js",
-  "/[locale]/(innerpage)/service/email-services/page": "app/[locale]/(innerpage)/service/email-services/page.js",
-  "/[locale]/(innerpage)/service/private-servers/page": "app/[locale]/(innerpage)/service/private-servers/page.js",
-  "/[locale]/(innerpage)/design-services/wep-design/page": "app/[locale]/(innerpage)/design-services/wep-design/page.js",
-  "/[locale]/(innerpage)/it-Services/it-helpDesk/page": "app/[locale]/(innerpage)/it-Services/it-helpDesk/page.js",
-  "/[locale]/(innerpage)/it-Services/vpn/page": "app/[locale]/(innerpage)/it-Services/vpn/page.js",
-  "/[locale]/(innerpage)/it-Services/call-center/page": "app/[locale]/(innerpage)/it-Services/call-center/page.js",
-  "/[locale]/(innerpage)/it-Services/security/page": "app/[locale]/(innerpage)/it-Services/security/page.js",
-  "/[locale]/(innerpage)/service/page": "app/[locale]/(innerpage)/service/page.js",
-  "/_not-found/page": "app/_not-found/page.js",
-  "/[locale]/(innerpage)/development/app-development/page": "app/[locale]/(innerpage)/development/app-development/page.js",
-  "/[locale]/(innerpage)/project/project-details/page": "app/[locale]/(innerpage)/project/project-details/page.js",
-  "/[locale]/(innerpage)/our-projects/news-project/page": "app/[locale]/(innerpage)/our-projects/news-project/page.js",
-  "/[locale]/(innerpage)/our-projects/real-estate-project/page": "app/[locale]/(innerpage)/our-projects/real-estate-project/page.js",
-  "/[locale]/(innerpage)/our-projects/store-project/page": "app/[locale]/(innerpage)/our-projects/store-project/page.js"
+  "/_not-found/page": "app/_not-found/page.js"
 }

@@ -38,7 +38,6 @@ async function edgeInstrumentationOnRequestError(...args) {
         await (instrumentation == null ? void 0 : (_instrumentation_onRequestError = instrumentation.onRequestError) == null ? void 0 : _instrumentation_onRequestError.call(instrumentation, ...args));
     } catch (err) {
         // Log the soft error and continue, since the original error has already been thrown
-        console.error('Error in instrumentation.onRequestError:', err);
     }
 }
 let registerInstrumentationPromise = null;
@@ -3055,7 +3054,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
                             if (console) {
                                 let r = console[e];
                                 if (typeof r !== "function") {
-                                    r = console.log;
                                 }
                                 if (typeof r === "function") {
                                     return r.apply(console, t);
@@ -5502,13 +5500,11 @@ class AfterContext {
     reportTaskError(taskKind, error) {
         // TODO(after): this is fine for now, but will need better intergration with our error reporting.
         // TODO(after): should we log this if we have a onTaskError callback?
-        console.error(taskKind === 'promise' ? `A promise passed to \`after()\` rejected:` : `An error occurred in a function passed to \`after()\`:`, error);
         if (this.onTaskError) {
             // this is very defensive, but we really don't want anything to blow up in an error handler
             try {
                 this.onTaskError == null ? void 0 : this.onTaskError.call(this, error);
             } catch (handlerError) {
-                console.error(new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$shared$2f$lib$2f$invariant$2d$error$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["InvariantError"]('`onTaskError` threw while handling an error thrown from an `after` task', {
                     cause: handlerError
                 }));
             }
@@ -6280,7 +6276,6 @@ function validateUniqueLocalesPerDomain(domains) {
     }
     const duplicateLocaleMessages = Array.from(domainsByLocale.entries()).filter(([, localeDomains])=>localeDomains.size > 1).map(([locale, localeDomains])=>`- "${locale}" is used by: ${Array.from(localeDomains).join(', ')}`);
     if (duplicateLocaleMessages.length > 0) {
-        console.warn('Locales are expected to be unique per domain, but found overlap:\n' + duplicateLocaleMessages.join('\n') + '\nPlease see https://next-intl.dev/docs/routing/configuration#domains');
     }
 }
 ;
@@ -8764,7 +8759,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
             case REACT_SUSPENSE_LIST_TYPE:
                 return "SuspenseList";
         }
-        if ("object" === typeof type) switch("number" === typeof type.tag && console.error("Received an unexpected object in getComponentNameFromType(). This is likely a bug in React. Please file an issue."), type.$$typeof){
             case REACT_CONTEXT_TYPE:
                 return (type.displayName || "Context") + ".Provider";
             case REACT_CONSUMER_TYPE:
@@ -8791,10 +8785,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
     function disabledLog() {}
     function disableLogs() {
         if (0 === disabledDepth) {
-            prevLog = console.log;
-            prevInfo = console.info;
-            prevWarn = console.warn;
-            prevError = console.error;
             prevGroup = console.group;
             prevGroupCollapsed = console.groupCollapsed;
             prevGroupEnd = console.groupEnd;
@@ -8848,7 +8838,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
                 })
             });
         }
-        0 > disabledDepth && console.error("disabledDepth fell below zero. This is a bug in React. Please file an issue.");
     }
     function describeBuiltInComponentFrame(name) {
         if (void 0 === prefix) try {
@@ -8990,7 +8979,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
     }
     function defineKeyPropWarningGetter(props, displayName) {
         function warnAboutAccessingKey() {
-            specialPropKeyWarningShown || (specialPropKeyWarningShown = !0, console.error("%s: `key` is not a prop. Trying to access it will result in `undefined` being returned. If you need to access the same value within the child component, you should pass it as a different prop. (https://react.dev/link/special-props)", displayName));
         }
         warnAboutAccessingKey.isReactWarning = !0;
         Object.defineProperty(props, "key", {
@@ -9000,7 +8988,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
     }
     function elementRefGetterWithDeprecationWarning() {
         var componentName = getComponentNameFromType(this.type);
-        didWarnAboutElementRef[componentName] || (didWarnAboutElementRef[componentName] = !0, console.error("Accessing element.ref was removed in React 19. ref is now a regular prop. It will be removed from the JSX Element type in a future release."));
         componentName = this.props.ref;
         return void 0 !== componentName ? componentName : null;
     }
@@ -9065,7 +9052,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
                 prevGetCurrentStack && (stack += prevGetCurrentStack() || "");
                 return stack;
             };
-            console.error('Each child in a list should have a unique "key" prop.%s%s See https://react.dev/link/warning-keys for more information.', parentType, childOwner);
             ReactSharedInternals.getCurrentStack = prevGetCurrentStack;
         }
     }
@@ -9141,7 +9127,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
         invokeCallback = 0;
         childKey = "" === nameSoFar ? "." : nameSoFar + ":";
         if (isArrayImpl(children)) for(var i = 0; i < children.length; i++)nameSoFar = children[i], type = childKey + getElementKey(nameSoFar, i), invokeCallback += mapIntoArray(nameSoFar, array, escapedPrefix, type, callback);
-        else if (i = getIteratorFn(children), "function" === typeof i) for(i === children.entries && (didWarnAboutMaps || console.warn("Using Maps as children is not supported. Use an array of keyed ReactElements instead."), didWarnAboutMaps = !0), children = i.call(children), i = 0; !(nameSoFar = children.next()).done;)nameSoFar = nameSoFar.value, type = childKey + getElementKey(nameSoFar, i++), invokeCallback += mapIntoArray(nameSoFar, array, escapedPrefix, type, callback);
         else if ("object" === type) {
             if ("function" === typeof children.then) return mapIntoArray(resolveThenable(children), array, escapedPrefix, nameSoFar, callback);
             array = String(children);
@@ -9159,7 +9144,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
     }
     function resolveDispatcher() {
         var dispatcher = ReactSharedInternals.H;
-        null === dispatcher && console.error("Invalid hook call. Hooks can only be called inside of the body of a function component. This could happen for one of the following reasons:\n1. You might have mismatching versions of React and the renderer (such as React DOM)\n2. You might be breaking the Rules of Hooks\n3. You might have more than one copy of React in the same app\nSee https://react.dev/link/invalid-hook-call for tips about how to debug and fix this problem.");
         return dispatcher;
     }
     function lazyInitializer(payload) {
@@ -9173,7 +9157,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
             });
             -1 === payload._status && (payload._status = 0, payload._result = ctor);
         }
-        if (1 === payload._status) return ctor = payload._result, void 0 === ctor && console.error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))\n\nDid you accidentally put curly braces around the import?", ctor), "default" in ctor || console.error("lazy: Expected the result of a dynamic import() call. Instead received: %s\n\nYour code should look like: \n  const MyComponent = lazy(() => import('./MyComponent'))", ctor), ctor.default;
         throw payload._result;
     }
     function createCacheRoot() {
@@ -9292,12 +9275,10 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
             if (void 0 === type || "object" === typeof type && null !== type && 0 === Object.keys(type).length) i += " You likely forgot to export your component from the file it's defined in, or you might have mixed up default and named imports.";
             if (null === type) var typeString = "null";
             else isArrayImpl(type) ? typeString = "array" : void 0 !== type && type.$$typeof === REACT_ELEMENT_TYPE ? (typeString = "<" + (getComponentNameFromType(type.type) || "Unknown") + " />", i = " Did you accidentally export a JSX literal instead of a component?") : typeString = typeof type;
-            console.error("React.createElement: type is invalid -- expected a string (for built-in components) or a class/function (for composite components) but got: %s.%s", typeString, i);
         }
         var propName;
         i = {};
         typeString = null;
-        if (null != config) for(propName in didWarnAboutOldJSXRuntime || !("__self" in config) || "key" in config || (didWarnAboutOldJSXRuntime = !0, console.warn("Your app (or one of its dependencies) is using an outdated JSX transform. Update to the modern JSX transform for faster performance: https://react.dev/link/new-jsx-transform")), hasValidKey(config) && (checkKeyStringCoercion(config.key), typeString = "" + config.key), config)hasOwnProperty.call(config, propName) && "key" !== propName && "__self" !== propName && "__source" !== propName && (i[propName] = config[propName]);
         var childrenLength = arguments.length - 2;
         if (1 === childrenLength) i.children = children;
         else if (1 < childrenLength) {
@@ -9317,8 +9298,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
         return refObject;
     };
     exports.forwardRef = function(render) {
-        null != render && render.$$typeof === REACT_MEMO_TYPE ? console.error("forwardRef requires a render function but received a `memo` component. Instead of forwardRef(memo(...)), use memo(forwardRef(...)).") : "function" !== typeof render ? console.error("forwardRef requires a render function but was given %s.", null === render ? "null" : typeof render) : 0 !== render.length && 2 !== render.length && console.error("forwardRef render functions accept exactly two parameters: props and ref. %s", 1 === render.length ? "Did you forget to use the ref parameter?" : "Any additional parameter will be undefined.");
-        null != render && null != render.defaultProps && console.error("forwardRef render functions do not support defaultProps. Did you accidentally pass a React component?");
         var elementType = {
             $$typeof: REACT_FORWARD_REF_TYPE,
             render: render
@@ -9350,7 +9329,6 @@ var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_
         };
     };
     exports.memo = function(type, compare) {
-        isValidElementType(type) || console.error("memo: The first argument must be a component. Instead received: %s", null === type ? "null" : typeof type);
         compare = {
             $$typeof: REACT_MEMO_TYPE,
             type: type,
@@ -9863,7 +9841,6 @@ function throwIfDisallowedDynamic(route, dynamicValidation, serverDynamic, clien
         if (!syncLogged) {
             // In dev we already log errors about sync dynamic access. But during builds we need to ensure
             // the offending sync error is logged before we exit the build
-            console.error(syncError);
         }
         // The actual error should have been logged when the sync access ocurred
         throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"]();
@@ -9871,20 +9848,17 @@ function throwIfDisallowedDynamic(route, dynamicValidation, serverDynamic, clien
     const dynamicErrors = dynamicValidation.dynamicErrors;
     if (dynamicErrors.length) {
         for(let i = 0; i < dynamicErrors.length; i++){
-            console.error(dynamicErrors[i]);
         }
         throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"]();
     }
     if (!dynamicValidation.hasSuspendedDynamic) {
         if (dynamicValidation.hasDynamicMetadata) {
             if (syncError) {
-                console.error(syncError);
                 throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"](`Route "${route}" has a \`generateMetadata\` that could not finish rendering before ${syncExpression} was used. Follow the instructions in the error for this expression to resolve.`);
             }
             throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"](`Route "${route}" has a \`generateMetadata\` that depends on Request data (\`cookies()\`, etc...) or external data (\`fetch(...)\`, etc...) but the rest of the route was static or only used cached data (\`"use cache"\`). If you expected this route to be prerenderable update your \`generateMetadata\` to not use Request data and only use cached external data. Otherwise, add \`await connection()\` somewhere within this route to indicate explicitly it should not be prerendered.`);
         } else if (dynamicValidation.hasDynamicViewport) {
             if (syncError) {
-                console.error(syncError);
                 throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"](`Route "${route}" has a \`generateViewport\` that could not finish rendering before ${syncExpression} was used. Follow the instructions in the error for this expression to resolve.`);
             }
             throw new __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$esm$2f$client$2f$components$2f$static$2d$generation$2d$bailout$2e$js__$5b$middleware$5d$__$28$ecmascript$29$__["StaticGenBailoutError"](`Route "${route}" has a \`generateViewport\` that depends on Request data (\`cookies()\`, etc...) or external data (\`fetch(...)\`, etc...) but the rest of the route was static or only used cached data (\`"use cache"\`). If you expected this route to be prerenderable update your \`generateViewport\` to not use Request data and only use cached external data. Otherwise, add \`await connection()\` somewhere within this route to indicate explicitly it should not be prerendered.`);

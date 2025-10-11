@@ -8,8 +8,6 @@ import { useLocale } from "next-intl";
 const BreadCumb = ({ Title_en, Title_ar, bgimg }) => {
   const locale = useLocale();
 
-  console.log(locale);
-
   useEffect(() => {
     loadBackgroudImages();
   }, []);

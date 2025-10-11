@@ -1,6 +1,7 @@
 import Link from "next/link";
 import DropDown from "./DropDown";
 import { useLocale, useTranslations } from "next-intl";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 export default function Nav({ setMobileToggle }) {
   const t = useTranslations();
@@ -224,6 +225,10 @@ export default function Nav({ setMobileToggle }) {
         >
           {t("navigation.contact")}
         </Link>
+      </li>
+
+      <li>
+        <LanguageSwitcher />
       </li>
     </ul>
   );

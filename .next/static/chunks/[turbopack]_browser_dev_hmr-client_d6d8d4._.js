@@ -34,7 +34,6 @@ function connectHMR(options) {
     const { timeout = 5 * 1000 } = options;
     function init() {
         if (source) source.close();
-        console.log("[HMR] connecting...");
         function handleOnline() {
             const connected = {
                 type: "turbopack-connected"
@@ -42,7 +41,6 @@ function connectHMR(options) {
             eventCallbacks.forEach((cb)=>{
                 cb(connected);
             });
-            if (options.log) console.log("[HMR] connected");
         // lastActivity = Date.now()
         }
         function handleMessage(event) {
@@ -95,7 +93,6 @@ function connect({ // TODO(WEB-1465) Remove this backwards compat fallback once
 // vercel/next.js#54586 is merged.
 addMessageListener = __TURBOPACK__imported__module__$5b$turbopack$5d2f$browser$2f$dev$2f$hmr$2d$client$2f$websocket$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["addMessageListener"], // TODO(WEB-1465) Remove this backwards compat fallback once
 // vercel/next.js#54586 is merged.
-sendMessage = __TURBOPACK__imported__module__$5b$turbopack$5d2f$browser$2f$dev$2f$hmr$2d$client$2f$websocket$2e$ts__$5b$app$2d$client$5d$__$28$ecmascript$29$__["sendMessage"], onUpdateError = console.error }) {
     addMessageListener((msg)=>{
         switch(msg.type){
             case "turbopack-connected":
@@ -112,7 +109,6 @@ sendMessage = __TURBOPACK__imported__module__$5b$turbopack$5d2f$browser$2f$dev$2
                     }
                     applyAggregatedUpdates();
                 } catch (e) {
-                    console.warn("[Fast Refresh] performing full reload\n\n" + "Fast Refresh will perform a full reload when you edit a file that's imported by modules outside of the React rendering tree.\n" + "You might have a file which exports a React component but also exports a value that is imported by a non-React component file.\n" + "Consider migrating the non-React component export to a separate file and importing it into both files.\n\n" + "It is also possible the parent component of the component you edited is a class component, which disables Fast Refresh.\n" + "Fast Refresh requires at least one parent function component in your React tree.");
                     onUpdateError(e);
                     location.reload();
                 }

@@ -24,6 +24,11 @@
     "blogLeftSidebar": "Blog Left Sidebar",
     "blogDetails": "Blog Details"
   },
+  "languages": {
+    "en": "English",
+    "ar": "العربية",
+    "switchLanguage": "Language"
+  },
   "hero": {
     "title": "We Provide The Best Tech Solutions",
     "subtitle": "We specialize in developing applications and websites with the latest technologies",
