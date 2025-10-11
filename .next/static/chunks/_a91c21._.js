@@ -147,6 +147,7 @@ const rectProperties = [
         'fixed'
     ].includes(getComputedStyle(element).position)) {
         if ("TURBOPACK compile-time truthy", 1) {
+            console.warn('Skipping auto-scroll behavior due to `position: sticky` or `position: fixed` on element:', element);
         }
         return true;
     }
@@ -814,11 +815,13 @@ const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unre
     if ("TURBOPACK compile-time falsy", 0) {
         "TURBOPACK unreachable";
     }
+    console.error(`A searchParam property was accessed directly with ${expression}. ` + `\`searchParams\` should be unwrapped with \`React.use()\` before accessing its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
 };
 const warnForSyncSpread = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForSyncSpread() {
     if ("TURBOPACK compile-time falsy", 0) {
         "TURBOPACK unreachable";
     }
+    console.error(`The keys of \`searchParams\` were accessed directly. ` + `\`searchParams\` should be unwrapped with \`React.use()\` before accessing its properties. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
 }; //# sourceMappingURL=search-params.browser.js.map
 }}),
 "[project]/node_modules/next/dist/server/request/params.browser.js [app-client] (ecmascript)": (function(__turbopack_context__) {
@@ -914,6 +917,7 @@ const warnForSyncAccess = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unre
     if ("TURBOPACK compile-time falsy", 0) {
         "TURBOPACK unreachable";
     }
+    console.error(`A param property was accessed directly with ${expression}. \`params\` is now a Promise and should be unwrapped with \`React.use()\` before accessing properties of the underlying params object. In this version of Next.js direct access to param properties is still supported to facilitate migration but in a future version you will be required to unwrap \`params\` with \`React.use()\`.`);
 };
 const warnForEnumeration = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : function warnForEnumeration(missingProperties) {
     if ("TURBOPACK compile-time falsy", 0) {
@@ -921,7 +925,9 @@ const warnForEnumeration = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unr
     }
     if (missingProperties.length) {
         const describedMissingProperties = describeListOfPropertyNames(missingProperties);
+        console.error(`params are being enumerated incompletely missing these properties: ${describedMissingProperties}. ` + `\`params\` should be unwrapped with \`React.use()\` before using its value. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
     } else {
+        console.error(`params are being enumerated. ` + `\`params\` should be unwrapped with \`React.use()\` before using its value. ` + `Learn more: https://nextjs.org/docs/messages/sync-dynamic-apis`);
     }
 };
 function describeListOfPropertyNames(properties) {
@@ -1009,6 +1015,7 @@ const cache = typeof _react.cache === 'function' ? _react.cache : (fn)=>fn;
 // When Dynamic IO is enabled, we record these as errors so that they
 // are captured by the dev overlay as it's more critical to fix these
 // when enabled.
+const logErrorOrWarn = ("TURBOPACK compile-time falsy", 0) ? ("TURBOPACK unreachable", undefined) : console.warn;
 // We don't want to dedupe across requests.
 // The developer might've just attempted to fix the warning so we should warn again if it still happens.
 const flushCurrentErrorIfNew = cache((key)=>{

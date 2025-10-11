@@ -1,6 +1,13 @@
 {
-  "/page": "app/page.js",
-  "/[locale]/(home1)/page": "app/[locale]/(home1)/page.js",
+  "/[locale]/(innerpage)/service/hosting/page": "app/[locale]/(innerpage)/service/hosting/page.js",
   "/favicon.ico/route": "app/favicon.ico/route.js",
-  "/_not-found/page": "app/_not-found/page.js"
+  "/[locale]/(innerpage)/design-services/game-design/page": "app/[locale]/(innerpage)/design-services/game-design/page.js",
+  "/[locale]/(innerpage)/service/distributor-hosting/page": "app/[locale]/(innerpage)/service/distributor-hosting/page.js",
+  "/[locale]/(innerpage)/design-services/app-design/page": "app/[locale]/(innerpage)/design-services/app-design/page.js",
+  "/_not-found/page": "app/_not-found/page.js",
+  "/[locale]/(innerpage)/design-services/wep-design/page": "app/[locale]/(innerpage)/design-services/wep-design/page.js",
+  "/[locale]/(innerpage)/service/email-services/page": "app/[locale]/(innerpage)/service/email-services/page.js",
+  "/[locale]/(innerpage)/service/private-servers/page": "app/[locale]/(innerpage)/service/private-servers/page.js",
+  "/page": "app/page.js",
+  "/[locale]/(home1)/page": "app/[locale]/(home1)/page.js"
 }

@@ -15,10 +15,10 @@ const page = () => {
       ></BreadCumb>
 
       <ServiceDetails />
-      <Services1></Services1>
+      <Services1 type="support" pageNumber={3}></Services1>
 
       {/* <Brand3></Brand3> */}
-      <Pricing1 />
+      <Pricing1 type="support" pageNumber={3} />
     </div>
   );
 };

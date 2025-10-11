@@ -701,12 +701,12 @@ const BreadCumb = ({ Title_en, Title_ar, bgimg })=>{
                             height: 848
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                            lineNumber: 22,
+                            lineNumber: 20,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                        lineNumber: 21,
+                        lineNumber: 19,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -718,12 +718,12 @@ const BreadCumb = ({ Title_en, Title_ar, bgimg })=>{
                             height: 877
                         }, void 0, false, {
                             fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                            lineNumber: 30,
+                            lineNumber: 28,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                        lineNumber: 29,
+                        lineNumber: 27,
                         columnNumber: 11
                     }, this),
                     /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -735,7 +735,7 @@ const BreadCumb = ({ Title_en, Title_ar, bgimg })=>{
                                     children: locale === "ar" ? Title_ar : Title_en
                                 }, void 0, false, {
                                     fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                                    lineNumber: 39,
+                                    lineNumber: 37,
                                     columnNumber: 15
                                 }, this),
                                 /*#__PURE__*/ (0, __TURBOPACK__imported__module__$5b$project$5d2f$node_modules$2f$next$2f$dist$2f$compiled$2f$react$2f$jsx$2d$dev$2d$runtime$2e$js__$5b$app$2d$client$5d$__$28$ecmascript$29$__["jsxDEV"])("div", {
@@ -750,47 +750,47 @@ const BreadCumb = ({ Title_en, Title_ar, bgimg })=>{
                                                     children: "/"
                                                 }, void 0, false, {
                                                     fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                                                    lineNumber: 43,
+                                                    lineNumber: 41,
                                                     columnNumber: 19
                                                 }, this)
                                             ]
                                         }, void 0, true, {
                                             fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                                            lineNumber: 41,
+                                            lineNumber: 39,
                                             columnNumber: 17
                                         }, this),
                                         locale === "ar" ? Title_ar : Title_en
                                     ]
                                 }, void 0, true, {
                                     fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                                    lineNumber: 40,
+                                    lineNumber: 38,
                                     columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
                             fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                            lineNumber: 38,
+                            lineNumber: 36,
                             columnNumber: 13
                         }, this)
                     }, void 0, false, {
                         fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                        lineNumber: 37,
+                        lineNumber: 35,
                         columnNumber: 11
                     }, this)
                 ]
             }, void 0, true, {
                 fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-                lineNumber: 20,
+                lineNumber: 18,
                 columnNumber: 9
             }, this)
         }, void 0, false, {
             fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-            lineNumber: 19,
+            lineNumber: 17,
             columnNumber: 7
         }, this)
     }, void 0, false, {
         fileName: "[project]/src/app/Components/Common/BreadCumb.jsx",
-        lineNumber: 18,
+        lineNumber: 16,
         columnNumber: 5
     }, this);
 };

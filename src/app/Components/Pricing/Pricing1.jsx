@@ -1,13 +1,70 @@
 "use client";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import PricingCard from "../Card/PricingCard";
 import Image from "next/image";
 import { useLocale } from "next-intl";
+import {
+  getAllPricings,
+  getAllDesignPricings,
+  getAllDevelopmentPricings,
+  getAllSupportPricings,
+  getAllAppVersionPricings,
+} from "@/lib/api/pricings";
+import { mapPricingsToComponent } from "@/lib/utils/dataMapper";
 
-const Pricing1 = () => {
+const Pricing1 = ({ type = "services", pageNumber = null }) => {
   const locale = useLocale();
 
   const [isActive, setIsActive] = useState("monthly");
+  const [pricings, setPricings] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    const fetchPricings = async () => {
+      setLoading(true);
+      let data = [];
+
+      try {
+        switch (type) {
+          case "services":
+            data = await getAllPricings(pageNumber);
+            break;
+          case "design":
+            data = await getAllDesignPricings(pageNumber);
+            break;
+          case "development":
+            data = await getAllDevelopmentPricings(pageNumber);
+            break;
+          case "support":
+            data = await getAllSupportPricings(pageNumber);
+            break;
+          case "app-version":
+            data = await getAllAppVersionPricings(pageNumber);
+            break;
+          default:
+            data = await getAllPricings(pageNumber);
+        }
+
+        const mappedData = mapPricingsToComponent(data, locale);
+        setPricings(mappedData);
+      } catch (error) {
+        console.error("Error fetching pricings:", error);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchPricings();
+  }, [type, pageNumber, locale]);
+
+  // لو مفيش أسعار، متظهرش القسم
+  if (loading) {
+    return null;
+  }
+
+  if (!pricings || pricings.length === 0) {
+    return null;
+  }
 
   return (
     <section className="pricing-section section-padding pt-0 fix">
@@ -24,216 +81,25 @@ const Pricing1 = () => {
           </div>
           <h2 className="title">
             {locale === "ar"
-              ? "اختر الخطة"
+              ? "اختر الخطة المناسبة لك"
               : "Choose The Plans That Suits You!"}
           </h2>
-          <p className="text">
-            {locale === "ar"
-              ? "هناك العديد من النسخ المتاحة"
-              : "There are many variations of passages of Lorem Ipsum available, but the majority have"}
-          </p>
         </div>
         <div className="pricing-wrapper style1">
-          <div className="tab-section d-flex justify-content-center align-items-center">
-            <ul className="nav nav-pills mb-3" id="pills-tab" role="tablist">
-              <li
-                className={`nav-item ${isActive === "monthly" ? "active" : ""}`}
-                onClick={() => setIsActive("monthly")}
-                role="presentation"
-              >
-                <button
-                  className="nav-link active"
-                  id="pills-monthly-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-monthly"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-monthly"
-                  aria-selected="true"
-                >
-                  {locale === "ar" ? "شهري" : "Monthly"}
-                </button>
-              </li>
-              <li
-                className={`nav-item ${isActive === "yearly" ? "active" : ""}`}
-                onClick={() => setIsActive("yearly")}
-                role="presentation"
-              >
-                <button
-                  className="nav-link"
-                  id="pills-yearly-tab"
-                  data-bs-toggle="pill"
-                  data-bs-target="#pills-yearly"
-                  type="button"
-                  role="tab"
-                  aria-controls="pills-yearly"
-                  aria-selected="false"
-                  tabIndex="-1"
-                >
-                  {locale === "ar" ? "سنوي" : "Yearly"}
-                </button>
-              </li>
-            </ul>
-          </div>
           <div className="tab-content" id="pills-tabContent">
-            <div
-              className={`tab-pane ${isActive === "monthly" ? "active" : ""}`}
-              id="pills-monthly"
-              role="tabpanel"
-              aria-labelledby="pills-monthly-tab"
-            >
-              <div className="row gy-5">
+            <div className="row gy-5">
+              {pricings.map((pricing) => (
                 <PricingCard
-                  name={locale === "ar" ? "الخطة الأساسية" : "Basic Plan"}
-                  price="$14.99"
-                  monthly="Per Month"
-                  content={
-                    locale === "ar"
-                      ? "هناك العديد من النسخ المتاحة"
-                      : "There are many variations of passages of Lorem Ipsum available, but the majority"
-                  }
-                  FeatureList={[
-                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
-                    locale === "ar"
-                      ? "العدد الأقصى للمتعاونين"
-                      : "Maximum of 5 collaborators",
-                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
-                    locale === "ar"
-                      ? "العدد الأقصى للمهام في الأسبوع"
-                      : "Maximum 50 tasks per week",
-                    locale === "ar"
-                      ? "تحديثات لسنة واحدة"
-                      : "Updates for 1 Year",
-                  ]}
-                  btnname={
-                    locale === "ar"
-                      ? "احصل على الخطة المجانية"
-                      : "Get You Free plan"
-                  }
-                  btnurl="/pricing"
-                ></PricingCard>
-
-                <PricingCard
-                  name={locale === "ar" ? "الخطة المتقدمة" : "Standard Plan"}
-                  price="$19.99"
-                  monthly="Per Month"
-                  content={
-                    locale === "ar"
-                      ? "هناك العديد من النسخ المتاحة"
-                      : "There are many variations of passages of Lorem Ipsum available, but the majority"
-                  }
-                  FeatureList={[
-                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
-                    locale === "ar"
-                      ? "العدد الأقصى للمتعاونين"
-                      : "Maximum of 5 collaborators",
-                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
-                    locale === "ar"
-                      ? "العدد الأقصى للمهام في الأسبوع"
-                      : "Maximum 50 tasks per week",
-                    locale === "ar"
-                      ? "العدد الأقصى للمهام في الأسبوع"
-                      : "Maximum 50 tasks per week",
-                    locale === "ar"
-                      ? "تحديثات لسنة واحدة"
-                      : "Updates for 1 Year",
-                  ]}
-                  btnname={
-                    locale === "ar"
-                      ? "احصل على الخطة المجانية"
-                      : "Get You Free plan"
-                  }
-                  btnurl="/pricing"
-                ></PricingCard>
-
-                <PricingCard
-                  name={
-                    locale === "ar" ? "الخطة المتقدمة" : "Premium Plan Plan"
-                  }
-                  price="$24.99"
-                  monthly="Per Month"
-                  content={
-                    locale === "ar"
-                      ? "هناك العديد من النسخ المتاحة"
-                      : "There are many variations of passages of Lorem Ipsum available, but the majority"
-                  }
-                  FeatureList={[
-                    locale === "ar" ? "7 أيام مجانية" : "7 days free access",
-                    locale === "ar"
-                      ? "العدد الأقصى للمتعاونين"
-                      : "Maximum of 5 collaborators",
-                    locale === "ar" ? "نسخة احتياطية 1GB" : "Cloud backup 1GB",
-                    locale === "ar"
-                      ? "العدد الأقصى للمهام في الأسبوع"
-                      : "Maximum 50 tasks per week",
-                    locale === "ar"
-                      ? "تحديثات لسنة واحدة"
-                      : "Updates for 1 Year",
-                  ]}
-                  btnname={
-                    locale === "ar"
-                      ? "احصل على الخطة المجانية"
-                      : "Get You Free plan"
-                  }
-                  btnurl="/pricing"
-                ></PricingCard>
-              </div>
-            </div>
-            <div
-              className={`tab-pane ${isActive === "yearly" ? "active" : ""}`}
-              id="pills-yearly"
-              role="tabpanel"
-              aria-labelledby="pills-yearly-tab"
-            >
-              <div className="row gy-5">
-                <PricingCard
-                  name="Basic Plan"
-                  price="$34.99"
-                  monthly="Per Month"
-                  content="There are many variations of passages of Lorem Ipsum available, but the majority"
-                  FeatureList={[
-                    "7 days free access",
-                    "Maximum of 5 collaborators",
-                    "Cloud backup 1GB",
-                    "Maximum 50 tasks per week",
-                    "Updates for 1 Year",
-                  ]}
-                  btnname="Get You Free plan"
-                  btnurl="/pricing"
-                ></PricingCard>
-
-                <PricingCard
-                  name="Standard Plan"
-                  price="$64.99"
-                  monthly="Per Month"
-                  content="There are many variations of passages of Lorem Ipsum available, but the majority"
-                  FeatureList={[
-                    "7 days free access",
-                    "Maximum of 5 collaborators",
-                    "Cloud backup 1GB",
-                    "Maximum 50 tasks per week",
-                    "Updates for 1 Year",
-                  ]}
-                  btnname="Get You Free plan"
-                  btnurl="/pricing"
-                ></PricingCard>
-
-                <PricingCard
-                  name="Premium Plan Plan"
-                  price="$84.99"
-                  monthly="Per Month"
-                  content="There are many variations of passages of Lorem Ipsum available, but the majority"
-                  FeatureList={[
-                    "7 days free access",
-                    "Maximum of 5 collaborators",
-                    "Cloud backup 1GB",
-                    "Maximum 50 tasks per week",
-                    "Updates for 1 Year",
-                  ]}
-                  btnname="Get You Free plan"
-                  btnurl="/pricing"
-                ></PricingCard>
-              </div>
+                  key={pricing.id}
+                  name={pricing.title}
+                  price={pricing.price}
+                  monthly={locale === "ar" ? "شهريًا" : "Per Month"}
+                  content=""
+                  FeatureList={pricing.items || pricing.features || []}
+                  btnname={locale === "ar" ? "احصل على الخطة" : "Get This Plan"}
+                  btnurl="#contact"
+                />
+              ))}
             </div>
           </div>
         </div>

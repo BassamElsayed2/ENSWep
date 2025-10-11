@@ -2,6 +2,7 @@ import { Urbanist, Nunito, Cairo } from "next/font/google";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
 import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 import "../assets/main.css";
 
 import { notFound } from "next/navigation";

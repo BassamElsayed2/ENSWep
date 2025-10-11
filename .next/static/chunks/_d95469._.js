@@ -609,6 +609,7 @@ function getOrInstantiateRuntimeModule(moduleId, chunkPath) {
  */ // @ts-ignore Defined in `runtime-utils.ts`
 const getOrInstantiateModuleFromParent = (id, sourceModule)=>{
     if (!sourceModule.hot.active) {
+        console.warn(`Unexpected import of module ${id} from module ${sourceModule.id}, which was deleted by an HMR update`);
     }
     const module = devModuleCache[id];
     if (sourceModule.children.indexOf(id) === -1) {
