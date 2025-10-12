@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/assets/css/base/variables.css"],"sourcesContent":["/*----------------------------------------------\r\n    # All Variables here\r\n----------------------------------------------*/\r\n\r\n:root {\r\n  --body: #fff;\r\n  --black: #000;\r\n  --white: #fff;\r\n  --theme: #7444fd;\r\n  --theme2: #f9f3ef;\r\n  --theme3: #faf8ff;\r\n  --title: #282c32;\r\n  --header: #282c32;\r\n  --orange: #e78c45;\r\n  --text: #858585;\r\n  --text2: #cbcbcb;\r\n  --border: #e6e6e6;\r\n  --border-2: #f1f1f1;\r\n  --border-3: #d8d8d8;\r\n  --border-4: #e0e0e0;\r\n  --border-5: #565656;\r\n  --bg-1: #161921;\r\n  --bg-2: #f6f7ff;\r\n  --box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.06);\r\n}\r\n"],"names":[],"mappings":"AAIA"}},
-    {"offset": {"line": 22, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

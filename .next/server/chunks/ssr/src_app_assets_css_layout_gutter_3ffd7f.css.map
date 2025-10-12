@@ -1,7 +1,0 @@
-{
-  "version": 3,
-  "sources": [],
-  "sections": [
-    {"offset": {"line": 1, "column": 0}, "map": {"version":3,"sources":["turbopack://[project]/src/app/assets/css/layout/gutter.css"],"sourcesContent":["/*----------------------------------------------\r\n    # Gutter  style here\r\n----------------------------------------------*/\r\n@media (min-width: 1600px) {\r\n  .gx-25 {\r\n    --bs-gutter-x: 25px;\r\n  }\r\n  .gx-30 {\r\n    --bs-gutter-x: 30px;\r\n  }\r\n  .gx-40 {\r\n    --bs-gutter-x: 40px;\r\n  }\r\n  .gx-60 {\r\n    --bs-gutter-x: 60px;\r\n  }\r\n  .gx-80 {\r\n    --bs-gutter-x: 80px;\r\n  }\r\n  .gx-95 {\r\n    --bs-gutter-x: 95px;\r\n  }\r\n  .gx-100 {\r\n    --bs-gutter-x: 100px;\r\n  }\r\n  .gx-114 {\r\n    --bs-gutter-x: 114px;\r\n  }\r\n  .gx-85 {\r\n    --bs-gutter-x: 85px;\r\n  }\r\n  .gx-134 {\r\n    --bs-gutter-x: 134px;\r\n  }\r\n  .gx-165 {\r\n    --bs-gutter-x: 165px;\r\n  }\r\n}\r\n.gy-30 {\r\n  --bs-gutter-y: 30px;\r\n}\r\n\r\n.gx-0 {\r\n  --bs-gutter-x: 0px;\r\n}\r\n"],"names":[],"mappings":"AAGA;EACE;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;EAGA;;;;;AAIF;;;;AAIA"}},
-    {"offset": {"line": 54, "column": 0}, "map": {"version":3,"sources":[],"names":[],"mappings":"A"}}]
-}

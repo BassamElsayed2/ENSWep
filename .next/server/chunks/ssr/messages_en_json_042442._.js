@@ -1,9 +1,0 @@
-module.exports = {
-
-"[project]/messages/en.json (json)": ((__turbopack_context__) => {
-
-var { r: __turbopack_require__, f: __turbopack_module_context__, i: __turbopack_import__, s: __turbopack_esm__, v: __turbopack_export_value__, n: __turbopack_export_namespace__, c: __turbopack_cache__, M: __turbopack_modules__, l: __turbopack_load__, j: __turbopack_dynamic__, P: __turbopack_resolve_absolute_path__, U: __turbopack_relative_url__, R: __turbopack_resolve_module_id_path__, b: __turbopack_worker_blob_url__, g: global, __dirname, t: __turbopack_require_real__ } = __turbopack_context__;
-{
-__turbopack_export_value__(JSON.parse("{\"navigation\":{\"home\":\"Home\",\"about\":\"About\",\"services\":\"Services\",\"portfolio\":\"Portfolio\",\"blog\":\"Blog\",\"contact\":\"Contact\",\"pages\":\"Pages\",\"project\":\"Project\",\"homeVersion1\":\"Home Version 1\",\"homeVersion2\":\"Home Version 2\",\"homeVersion3\":\"Home Version 3\",\"aboutUs\":\"About Us\",\"ourTeam\":\"Our Team\",\"teamDetails\":\"Team Details\",\"pricing\":\"Pricing\",\"faq\":\"FAQ\",\"project1\":\"Project 1\",\"project2\":\"Project 2\",\"projectDetails\":\"Project Details\",\"serviceDetails\":\"Service Details\",\"blogWithSidebar\":\"Blog With Sidebar\",\"blogLeftSidebar\":\"Blog Left Sidebar\",\"blogDetails\":\"Blog Details\"},\"languages\":{\"en\":\"English\",\"ar\":\"العربية\",\"switchLanguage\":\"Language\"},\"hero\":{\"title\":\"We Provide The Best Tech Solutions\",\"subtitle\":\"We specialize in developing applications and websites with the latest technologies\",\"button\":\"Get Started\"},\"common\":{\"readMore\":\"Read More\",\"learnMore\":\"Learn More\",\"getStarted\":\"Get Started\",\"contactUs\":\"Contact Us\",\"viewAll\":\"View All\",\"search\":\"Search...\"}}"));}}),
-
-};
