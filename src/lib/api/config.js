@@ -13,7 +13,7 @@ const getApiBaseUrl = () => {
 
   // Priority 2: Check if in production mode
   if (process.env.NODE_ENV === "production") {
-    return "http://103.195.102.76:4010";
+    return "https://ens.eg";
   }
 
   // Priority 3: Default to localhost for development
