@@ -1,4 +1,174 @@
-{
+{ "HomePage": {
+  "hero": {
+    "subtitle": "<span>News!</span> Find Your Solution",
+    "title": "We Develop Websites, Applications, and Brands.",
+    "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
+    "btn1": "Get Started Now",
+    "btn2": "Learn More",
+    "customers": "Happy Customers",
+    "rating": "Rating"
+  },
+  "about": {
+    "subtitle": "About Our App",
+    "title": "Simple Reports & Analytics Backdown As it",
+    "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words.",
+    "feature1": "With our Technological and Marketing Solutions.",
+    "feature2": "We are trusted all over the world.",
+    "feature3": "Start Your 14 Days Free Trials Today!",
+    "btn": "Discover More"
+  },
+  "choose": {
+    "subtitle": "App Advantage",
+    "title": "Get Benefit By Using Trending Apps",
+    "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration.",
+    "feature1": "Friendly Design",
+    "feature2": "SEO Optimized",
+    "feature3": "Cloud Storage",
+    "feature4": "Strong Security",
+    "btn": "Download App"
+  },
+  "cta": {
+    "subtitle": "Our App",
+    "title": "Download our app and start your free trial today!",
+    "content": "There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form."
+  }
+},
+"HowWork": {
+  "SubTitle": "How It Works",
+  "Title": "Make Your Device Manage Everything For You!",
+  "steps": [
+    {
+      "step": "STEP - 01",
+      "title": "Download App",
+      "text": "There are many variations of passages of Lorem"
+    },
+    {
+      "step": "STEP - 02",
+      "title": "Create account",
+      "text": "There are many variations of passages of Lorem"
+    },
+    {
+      "step": "STEP - 03",
+      "title": "Install App, & Enjoy",
+      "text": "There are many variations of passages of Lorem"
+    }
+  ]
+}, "Feature1": {
+  "SubTitle": "Why using our app",
+  "Title": "Our app is great for individuals, startups and enterprises",
+  "features": [
+    { "title": "High usability", "content": "There are many variations of passages of Lorem Ipsum" },
+    { "title": "Action Reminder", "content": "There are many variations of passages of Lorem Ipsum" },
+    { "title": "Merge Files", "content": "There are many variations of passages of Lorem Ipsum" },
+    { "title": "Free Live Chat", "content": "There are many variations of passages of Lorem Ipsum" },
+    { "title": "Social Share", "content": "There are many variations of passages of Lorem Ipsum" },
+    { "title": "Custom Shortcuts", "content": "There are many variations of passages of Lorem Ipsum" }
+  ]
+},
+"Counter1": {
+  "counters": [
+    { "text": "Customers visit app every month" },
+    { "text": "Total downloads of our app" },
+    { "text": "Total members of app users" },
+    { "text": "Satisfaction rate from our customers" }
+  ]
+},
+"FaqSection": {
+  "subtitle": "FAQs",
+  "title": "Frequently Asked Questions",
+  "description": "There are many variations of passages of Lorem Ipsum available...",
+  "faqItems": [
+    {
+      "question": "How can I install the app?",
+      "answer": "You can download it from the App Store or Google Play."
+    },
+    {
+      "question": "Is my data secure?",
+      "answer": "Yes, we use encryption and secure servers to protect your data."
+    },
+    {
+      "question": "How can I contact support?",
+      "answer": "You can reach us through email or our in-app chat support."
+    }
+  ]
+},  "Footer": {
+  "description": "It is a long established fact that from will be distracted by the readable from when looking.",
+  "appStore": "App Store",
+  "playStore": "Play Store",
+  "pagesTitle": "Pages",
+  "utilityTitle": "Utility Pages",
+  "home": "Home",
+  "about": "About Us",
+  "integrations": "Integrations",
+  "features": "Features",
+  "pricing": "Pricing",
+  "contact": "Contact Us",
+  "blog": "Blog",
+  "projectDetails": "Project Details",
+  "team": "Our Team",
+  "addressTitle": "Address",
+  "readyTitle": "Ready to get started?",
+  "readyText": "It is a long established fact that a reader will be distracted layout.",
+  "copyright": "Copyright © Niotech All rights"
+},
+"Blog1": {
+  "subtitle": "Our Blog",
+  "title": "Recent Articles And Latest Blog",
+  "workplace": "Workplace",
+  "byAdmin": "By Admin",
+  "services": "Services that printing at you is important",
+  "date": "Sep 30, 2024",
+  "coding": "Coding",
+  "checklist": "A checklist to improve your daily routine",
+  "technology": "Technology",
+  "help": "That will help you get 1% better every day"
+},
+"TestimonialSection": {
+  "subtitle": "Testimonials",
+  "title": "What our clients say?",
+  "items": [
+    {
+      "img": "/assets/images/testimonial/test1.png",
+      "title": "John Doe",
+      "subTitle": "Marketing Manager",
+      "desc": "This app completely changed how we manage our team’s workflow. It’s intuitive and fast!"
+    },
+    {
+      "img": "/assets/images/testimonial/test2.png",
+      "title": "Sarah Smith",
+      "subTitle": "Designer",
+      "desc": "A wonderful experience! I highly recommend this for anyone looking to boost productivity."
+    },
+    {
+      "img": "/assets/images/testimonial/test3.png",
+      "title": "Ahmed Ali",
+      "subTitle": "Software Engineer",
+      "desc": "The customer support is top-notch. I love how simple yet powerful this app is."
+    }
+  ]
+},
+"FeatureSection2": {
+  "subtitle": "Our Features",
+  "title": "Our features will help to improve business",
+  "description": "There are many variations of passages of Lorem Ipsum available, but most have suffered alteration in some form.",
+  "button": "Start Collaborator",
+  "today": "Today",
+  "time": "07:02 AM",
+  "features": [
+    {
+      "title": "Software Development",
+      "subtitle": "UX Research"
+    },
+    {
+      "title": "Design Data & Analytics",
+      "subtitle": "UX Research"
+    },
+    {
+      "title": "Dedicated Support",
+      "subtitle": "UX Research"
+    }
+  ]
+},
   "navigation": {
     "home": "Home",
     "about": "About",

@@ -3,9 +3,10 @@ import Slider from "react-slick";
 import data from '../../Data/testimonial1.json';
 import SectionTitle from "../Common/SectionTitle";
 import Image from "next/image";
-
+import { useTranslations } from "next-intl";    
 const Testimonial = () => {
-
+    const t = useTranslations("TestimonialSection");
+    const testimonials = t.raw("items");
     const settings = {
         dots: false,
         infinite: true,
@@ -48,9 +49,9 @@ const Testimonial = () => {
                         <div className="shape2"><Image src="/assets/images/shape/testimonialShape1_2.png" alt="img" width={983} height={758}   /></div>
                         <div className="container">
                             <div className="section-title text-center mxw-685 mx-auto">
-                                <SectionTitle
-                                        SubTitle="Testimonial"
-                                        Title="What our clients say?"
+                            <SectionTitle
+                  SubTitle={t("subtitle")}
+                  Title={t("title")}
                                 ></SectionTitle>                                
                             </div>
                             <div className="slider-area testimonialSliderOne">
@@ -59,12 +60,17 @@ const Testimonial = () => {
                                     <div className="swiper-wrapper cs_slider_gap_301">
 
                                     <Slider {...settings}>
-                                    {data.map((item, index)=>(
+                                    {testimonials.map((item, index)=>(
                                         <div key={index} className="swiper-slide">
                                             <div className="testimonial-card style1">
                                                 <div className="testimonial-header">
                                                     <div className="profile-thumb">
-                                                    <Image src={item.img} alt="img" width={60} height={60}   />
+                                                    <Image
+                              src={item.img}
+                              alt={item.title}
+                              width={60}
+                              height={60}
+                            />
                                                     </div>
                                                     <div className="content">
                                                         <h5>{item.title}</h5>
@@ -73,16 +79,27 @@ const Testimonial = () => {
                                                 </div>
                                                 <div className="testimonial-body">
                                                     <ul className="star-wrapper style1">
-                                                        <li><Image src="/assets/images/icon/starIcon1_1.svg" alt="img" width={16} height={15}   /></li>
-                                                        <li><Image src="/assets/images/icon/starIcon1_1.svg" alt="img" width={16} height={15}   /></li>
-                                                        <li><Image src="/assets/images/icon/starIcon1_1.svg" alt="img" width={16} height={15}   /></li>
-                                                        <li><Image src="/assets/images/icon/starIcon1_1.svg" alt="img" width={16} height={15}   /></li>
-                                                        <li><Image src="/assets/images/icon/starIcon1_1.svg" alt="img" width={16} height={15}   /></li>
-                                                    </ul>
+                                                    {Array(5)
+                              .fill()
+                              .map((_, i) => (
+                                <li key={i}>
+                                  <Image
+                                    src="/assets/images/icon/starIcon1_1.svg"
+                                    alt="img"
+                                    width={16}
+                                    height={15}
+                                  />
+                                </li>
+                              ))} </ul>
                                                     <p className="desc">{item.desc}</p>
                                                 </div>
                                                 <div className="quote-icon">
-                                                <Image src="/assets/images/icon/quoteIcon.svg" alt="img" width={30} height={30}   />
+                                                <Image
+                            src="/assets/images/icon/quoteIcon.svg"
+                            alt="img"
+                            width={30}
+                            height={30}
+                          />
                                                     </div>
                                             </div>
                                         </div>

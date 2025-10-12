@@ -68,7 +68,7 @@ const HeroBanner1 = ({
                   <div className="intro-content">
                     <div className="intro-section-title">
                       <div className="intro-subtitle">
-                        {parse(subtitle)}{" "}
+                        {typeof subtitle === 'string' ? parse(subtitle) : subtitle}{" "}
                         <Image
                           src="/assets/images/icon/fireIcon.svg"
                           alt="img"
