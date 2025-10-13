@@ -14,7 +14,7 @@ const page = () => {
         Title_ar="الخدمات البريدية"
       ></BreadCumb>
 
-      <ServiceDetails />
+      <ServiceDetails namespace="ServiceDetails_EmailServices" />
       <Services1 type="services" pageNumber={4}></Services1>
 
       <Brand3></Brand3>

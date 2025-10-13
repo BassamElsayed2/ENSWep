@@ -14,7 +14,7 @@ const page = () => {
         Title_ar="استضافة الموزعين"
       ></BreadCumb>
 
-      <ServiceDetails />
+      <ServiceDetails namespace="ServiceDetails_DistributorHosting" />
       <Services1 type="services" pageNumber={2}></Services1>
 
       <Brand3></Brand3>

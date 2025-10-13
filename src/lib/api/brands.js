@@ -22,7 +22,6 @@ export async function getAllBrands() {
     // In case backend sends wrapped response
     return response.data || response || [];
   } catch (error) {
-    console.error("Error fetching brands:", error);
     return [];
   }
 }
@@ -37,7 +36,6 @@ export async function getBrandById(id) {
     const response = await get(API_ENDPOINTS.BRANDS.GET_BY_ID(id));
     return response.data || response || null;
   } catch (error) {
-    console.error("Error fetching brand:", error);
     return null;
   }
 }

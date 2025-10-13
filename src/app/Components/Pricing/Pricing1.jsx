@@ -11,6 +11,7 @@ import {
   getAllAppVersionPricings,
 } from "@/lib/api/pricings";
 import { mapPricingsToComponent } from "@/lib/utils/dataMapper";
+import pricingData from "../../Data/pricing1.json";
 
 const Pricing1 = ({ type = "services", pageNumber = null }) => {
   const locale = useLocale();
@@ -45,10 +46,33 @@ const Pricing1 = ({ type = "services", pageNumber = null }) => {
             data = await getAllPricings(pageNumber);
         }
 
-        const mappedData = mapPricingsToComponent(data, locale);
-        setPricings(mappedData);
+        // إذا كانت البيانات من API موجودة، استخدمها
+        if (data && data.length > 0) {
+          const mappedData = mapPricingsToComponent(data, locale);
+          setPricings(mappedData);
+        } else {
+          // استخدام البيانات المحلية بصمت
+          const localData = pricingData.map(item => ({
+            id: item.id,
+            title: typeof item.title === 'object' ? item.title[locale] : item.title,
+            price: item.price,
+            features: item.items.map(feature => 
+              typeof feature === 'object' ? feature[locale] : feature
+            )
+          }));
+          setPricings(localData);
+        }
       } catch (error) {
-        console.error("Error fetching pricings:", error);
+        // استخدام البيانات المحلية عند فشل API
+        const localData = pricingData.map(item => ({
+          id: item.id,
+          title: typeof item.title === 'object' ? item.title[locale] : item.title,
+          price: item.price,
+          features: item.items.map(feature => 
+            typeof feature === 'object' ? feature[locale] : feature
+          )
+        }));
+        setPricings(localData);
       } finally {
         setLoading(false);
       }

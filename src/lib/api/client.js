@@ -66,7 +66,12 @@ export async function apiRequest(endpoint, options = {}) {
       throw error;
     }
 
-    // Network or other errors
+    // Network or other errors - check if it's a connection error
+    if (error.message.includes('fetch') || error.message.includes('Failed to fetch')) {
+      // تجاهل رسائل الاتصال بصمت - سيتم استخدام البيانات المحلية
+      throw new ApiError("API server not available", 0, null);
+    }
+
     throw new ApiError(error.message || "Network error occurred", 0, null);
   }
 }

@@ -20,7 +20,6 @@ export async function getAllServices(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching services:", error);
     return [];
   }
 }
@@ -35,7 +34,6 @@ export async function getServicesByPage(pageNumber) {
     const response = await get(API_ENDPOINTS.SERVICES.GET_BY_PAGE(pageNumber));
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching services by page:", error);
     return [];
   }
 }
@@ -50,7 +48,6 @@ export async function getServiceById(id) {
     const response = await get(API_ENDPOINTS.SERVICES.GET_BY_ID(id));
     return response.success ? response.data : null;
   } catch (error) {
-    console.error("Error fetching service:", error);
     return null;
   }
 }
@@ -69,7 +66,6 @@ export async function getAllDesignServices(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching design services:", error);
     return [];
   }
 }
@@ -86,7 +82,6 @@ export async function getDesignServicesByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching design services by page:", error);
     return [];
   }
 }
@@ -105,7 +100,6 @@ export async function getAllDevelopmentServices(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching development services:", error);
     return [];
   }
 }
@@ -122,7 +116,6 @@ export async function getDevelopmentServicesByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching development services by page:", error);
     return [];
   }
 }
@@ -141,7 +134,6 @@ export async function getAllSupportServices(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching support services:", error);
     return [];
   }
 }
@@ -158,7 +150,6 @@ export async function getSupportServicesByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching support services by page:", error);
     return [];
   }
 }
@@ -177,7 +168,6 @@ export async function getAllAppVersionServices(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching app version services:", error);
     return [];
   }
 }
@@ -194,7 +184,6 @@ export async function getAppVersionServicesByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching app version services by page:", error);
     return [];
   }
 }
@@ -209,7 +198,7 @@ export async function getAllBrands() {
     // The brands endpoint returns array directly, not wrapped in success/data
     return Array.isArray(response) ? response : [];
   } catch (error) {
-    console.error("Error fetching brands:", error);
+    // API غير متاح - استخدم البيانات المحلية بدلاً من ذلك
     return [];
   }
 }
@@ -224,7 +213,6 @@ export async function getBrandById(id) {
     const response = await get(API_ENDPOINTS.BRANDS.GET_BY_ID(id));
     return response || null;
   } catch (error) {
-    console.error("Error fetching brand:", error);
     return null;
   }
 }

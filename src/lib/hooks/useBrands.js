@@ -34,8 +34,9 @@ export function useBrands() {
         }
       } catch (err) {
         if (isMounted) {
-          setError(err.message || "Failed to fetch brands");
-          console.error("Error in useBrands:", err);
+          // تجاهل أخطاء API بصمت - البيانات ستكون فارغة
+          setError(null);
+          setData([]);
         }
       } finally {
         if (isMounted) {

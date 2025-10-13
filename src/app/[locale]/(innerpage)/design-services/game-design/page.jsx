@@ -10,11 +10,12 @@ const page = () => {
     <div>
       <BreadCumb
         bgimg="/assets/images/bg/breadcumgBg.png"
-        Title_en="Distributor Hosting"
-        Title_ar="استضافة الموزعين"
+        Title_en="Game Design"
+        Title_ar="تصميم الألعاب"
       ></BreadCumb>
 
-      <ServiceDetails />
+<ServiceDetails namespace="ServiceDetails_GameDesign" />
+
       <Services1 type="design" pageNumber={2}></Services1>
 
       <Brand3></Brand3>

@@ -82,8 +82,9 @@ export function usePricings(type = "pricings", pageNumber = null) {
         }
       } catch (err) {
         if (isMounted) {
-          setError(err.message || "Failed to fetch pricings");
-          console.error("Error in usePricings:", err);
+          // تجاهل أخطاء API بصمت - البيانات ستكون فارغة
+          setError(null);
+          setData([]);
         }
       } finally {
         if (isMounted) {

@@ -20,7 +20,7 @@ export async function getAllPricings(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching pricings:", error);
+    // تجاهل أخطاء API بصمت - سيتم استخدام البيانات المحلية
     return [];
   }
 }
@@ -35,7 +35,6 @@ export async function getPricingsByPage(pageNumber) {
     const response = await get(API_ENDPOINTS.PRICINGS.GET_BY_PAGE(pageNumber));
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching pricings by page:", error);
     return [];
   }
 }
@@ -50,7 +49,6 @@ export async function getPricingById(id) {
     const response = await get(API_ENDPOINTS.PRICINGS.GET_BY_ID(id));
     return response.success ? response.data : null;
   } catch (error) {
-    console.error("Error fetching pricing:", error);
     return null;
   }
 }
@@ -69,7 +67,6 @@ export async function getAllDesignPricings(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching design pricings:", error);
     return [];
   }
 }
@@ -86,7 +83,6 @@ export async function getDesignPricingsByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching design pricings by page:", error);
     return [];
   }
 }
@@ -105,7 +101,6 @@ export async function getAllDevelopmentPricings(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching development pricings:", error);
     return [];
   }
 }
@@ -122,7 +117,6 @@ export async function getDevelopmentPricingsByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching development pricings by page:", error);
     return [];
   }
 }
@@ -141,7 +135,6 @@ export async function getAllSupportPricings(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching support pricings:", error);
     return [];
   }
 }
@@ -158,7 +151,6 @@ export async function getSupportPricingsByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching support pricings by page:", error);
     return [];
   }
 }
@@ -177,7 +169,6 @@ export async function getAllAppVersionPricings(pageNumber = null) {
     const response = await get(endpoint);
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching app version pricings:", error);
     return [];
   }
 }
@@ -194,7 +185,6 @@ export async function getAppVersionPricingsByPage(pageNumber) {
     );
     return response.success ? response.data : [];
   } catch (error) {
-    console.error("Error fetching app version pricings by page:", error);
     return [];
   }
 }

@@ -3,6 +3,7 @@ import { useState, useEffect } from "react";
 import Slider from "react-slick";
 import Image from "next/image";
 import { getAllBrands } from "../../../lib/api/services";
+import brandsData from "../../Data/brand1.json";
 
 const Brand1 = () => {
   const [brands, setBrands] = useState([]);
@@ -13,9 +14,16 @@ const Brand1 = () => {
       try {
         setLoading(true);
         const data = await getAllBrands();
-        setBrands(data);
+        // إذا كان API فارغ أو فشل، استخدم البيانات المحلية
+        if (data && data.length > 0) {
+          setBrands(data);
+        } else {
+          // استخدام البيانات المحلية بصمت
+          setBrands(brandsData);
+        }
       } catch (error) {
-        console.error("Error loading brands:", error);
+        // استخدام البيانات المحلية عند فشل API بدون رسالة خطأ مزعجة
+        setBrands(brandsData);
       } finally {
         setLoading(false);
       }
